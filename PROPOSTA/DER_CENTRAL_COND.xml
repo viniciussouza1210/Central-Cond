@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes" ?>
 <DBMODEL Version="4.0">
 <SETTINGS>
-<GLOBALSETTINGS ModelName="DER_CENTRAL_COND" IDModel="0" IDVersion="0" VersionStr="1.0.0.0" Comments="" UseVersionHistroy="1" AutoIncVersion="1" DatabaseType="MySQL" ZoomFac="66.00" XPos="0" YPos="144" DefaultDataType="5" DefaultTablePrefix="0" DefSaveDBConn="" DefSyncDBConn="" DefQueryDBConn="" Printer="" HPageCount="4.0" PageAspectRatio="1.440892512336408" PageOrientation="1" PageFormat="A4 (210x297 mm, 8.26x11.7 inches)" SelectedPages="" UsePositionGrid="0" PositionGridX="20" PositionGridY="20" TableNameInRefs="1" DefaultTableType="0" ActivateRefDefForNewRelations="1" FKPrefix="" FKPostfix="" CreateFKRefDefIndex="1" DBQuoteCharacter="`" CreateSQLforLinkedObjects="0" DefModelFont="Tahoma" CanvasWidth="4096" CanvasHeight="2842" />
+<GLOBALSETTINGS ModelName="DER_CENTRAL_COND" IDModel="0" IDVersion="0" VersionStr="1.0.0.0" Comments="" UseVersionHistroy="1" AutoIncVersion="1" DatabaseType="MySQL" ZoomFac="66.00" XPos="102" YPos="0" DefaultDataType="5" DefaultTablePrefix="0" DefSaveDBConn="" DefSyncDBConn="" DefQueryDBConn="" Printer="" HPageCount="4.0" PageAspectRatio="1.440892512336408" PageOrientation="1" PageFormat="A4 (210x297 mm, 8.26x11.7 inches)" SelectedPages="" UsePositionGrid="0" PositionGridX="20" PositionGridY="20" TableNameInRefs="1" DefaultTableType="0" ActivateRefDefForNewRelations="1" FKPrefix="" FKPostfix="" CreateFKRefDefIndex="1" DBQuoteCharacter="`" CreateSQLforLinkedObjects="0" DefModelFont="Tahoma" CanvasWidth="4096" CanvasHeight="2842" />
 <DATATYPEGROUPS>
 <DATATYPEGROUP Name="Numeric Types" Icon="1" />
 <DATATYPEGROUP Name="Date and Time Types" Icon="2" />
@@ -260,9 +260,15 @@
 <REGIONS>
 </REGIONS>
 <TABLES>
-<TABLE ID="1922" Tablename="CONDOMINIO" PrevTableName="Table_04" XPos="821" YPos="353" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="3" >
+<TABLE ID="1922" Tablename="CONDOMINIO" PrevTableName="Table_04" XPos="918" YPos="561" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="3" >
 <COLUMNS>
 <COLUMN ID="1924" ColName="ID_CONDOMINIO" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2176" ColName="REGRAS_GERAIS_ID_REGRA" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
@@ -283,9 +289,12 @@
 <RELATIONS_START>
 <RELATION_START ID="1950" />
 <RELATION_START ID="2007" />
+<RELATION_START ID="2115" />
+<RELATION_START ID="2126" />
 </RELATIONS_START>
 <RELATIONS_END>
 <RELATION_END ID="1941" />
+<RELATION_END ID="2175" />
 </RELATIONS_END>
 <INDICES>
 <INDEX ID="1925" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
@@ -298,9 +307,14 @@
 <INDEXCOLUMN idColumn="1942" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
+<INDEX ID="2177" IndexName="CONDOMINIO_FKIndex2" IndexKind="1" FKRefDef_Obj_id="2175">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2176" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1931" Tablename="ENDERECO" PrevTableName="Table_05" XPos="1180" YPos="338" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="5" >
+<TABLE ID="1931" Tablename="ENDERECO" PrevTableName="Table_05" XPos="1353" YPos="294" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="5" >
 <COLUMNS>
 <COLUMN ID="1933" ColName="ID_ENDERECO" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -343,6 +357,7 @@
 </COLUMNS>
 <RELATIONS_START>
 <RELATION_START ID="1941" />
+<RELATION_START ID="2110" />
 </RELATIONS_START>
 <INDICES>
 <INDEX ID="1934" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
@@ -352,7 +367,7 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1944" Tablename="AREA_COMUM" PrevTableName="Table_06" XPos="803" YPos="535" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="7" >
+<TABLE ID="1944" Tablename="AREA_COMUM" PrevTableName="Table_06" XPos="892" YPos="823" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="7" >
 <COLUMNS>
 <COLUMN ID="1946" ColName="ID_AREA_COMUM" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -397,7 +412,7 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1953" Tablename="VISITANTE" PrevTableName="Table_07" XPos="436" YPos="1065" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="9" >
+<TABLE ID="1953" Tablename="VISITANTE" PrevTableName="Table_07" XPos="655" YPos="1171" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="9" >
 <COLUMNS>
 <COLUMN ID="1955" ColName="ID_VISITANTE" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -427,7 +442,7 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1906" Tablename="PROPRIETARIO" PrevTableName="Table_02" XPos="421" YPos="588" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="2" >
+<TABLE ID="1906" Tablename="PROPRIETARIO" PrevTableName="Table_02" XPos="295" YPos="888" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="2" >
 <COLUMNS>
 <COLUMN ID="1908" ColName="ID_PROPRIETARIO" PrevColName="ID_MORADOR" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -459,6 +474,14 @@
 <OPTIONSELECTED>
 </OPTIONSELECTED>
 </COLUMN>
+<COLUMN ID="2151" ColName="CONSELHO" PrevColName="" Pos="6" idDatatype="22" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2152" ColName="SINDICO" PrevColName="" Pos="7" idDatatype="22" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
 </COLUMNS>
 <RELATIONS_START>
 <RELATION_START ID="2004" />
@@ -473,7 +496,7 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1998" Tablename="IMOVEL" PrevTableName="Table_13" XPos="362" YPos="317" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="18" >
+<TABLE ID="1998" Tablename="IMOVEL" PrevTableName="Table_13" XPos="261" YPos="556" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="18" >
 <COLUMNS>
 <COLUMN ID="2000" ColName="ID_IMOVEL" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -513,7 +536,15 @@
 <OPTIONSELECTED>
 </OPTIONSELECTED>
 </COLUMN>
+<COLUMN ID="2106" ColName="TELEFONE" PrevColName="" Pos="7" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
 </COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="2125" />
+</RELATIONS_START>
 <RELATIONS_END>
 <RELATION_END ID="2004" />
 <RELATION_END ID="2007" />
@@ -536,7 +567,7 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="2023" Tablename="PROPRIETARIO_has_AREA_COMUM" PrevTableName="" XPos="800" YPos="729" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="15" >
+<TABLE ID="2023" Tablename="PROPRIETARIO_has_AREA_COMUM" PrevTableName="" XPos="895" YPos="1033" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="15" >
 <COLUMNS>
 <COLUMN ID="2028" ColName="AREA_COMUM_ID_AREA_COMUM" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -586,7 +617,7 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="2035" Tablename="VISITANTE_has_PROPRIETARIO" PrevTableName="" XPos="361" YPos="800" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="15" >
+<TABLE ID="2035" Tablename="VISITANTE_has_PROPRIETARIO" PrevTableName="" XPos="235" YPos="1120" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="15" >
 <COLUMNS>
 <COLUMN ID="2038" ColName="VISITANTE_ID_VISITANTE" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -636,7 +667,7 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="2073" Tablename="REGRAS_LOCACAO" PrevTableName="Table_10" XPos="1211" YPos="541" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" >
+<TABLE ID="2073" Tablename="REGRAS_LOCACAO" PrevTableName="Table_10" XPos="1300" YPos="838" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" >
 <COLUMNS>
 <COLUMN ID="2076" ColName="ID_REGRAS_LOCACAO" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -677,6 +708,251 @@
 </INDEX>
 </INDICES>
 </TABLE>
+<TABLE ID="2092" Tablename="FORNECEDORES" PrevTableName="Table_10" XPos="967" YPos="45" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" >
+<COLUMNS>
+<COLUMN ID="2099" ColName="ID_FORNECEDORES" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2111" ColName="ENDERECO_ID_ENDERECO" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2101" ColName="NOME" PrevColName="" Pos="1" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2102" ColName="CNPJ" PrevColName="" Pos="2" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2103" ColName="TELEFONE" PrevColName="" Pos="3" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2104" ColName="DESCRICAO" PrevColName="" Pos="4" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="2114" />
+<RELATION_START ID="2160" />
+</RELATIONS_START>
+<RELATIONS_END>
+<RELATION_END ID="2110" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="2100" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2099" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="2112" IndexName="FORNECEDORES_FKIndex1" IndexKind="1" FKRefDef_Obj_id="2110">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2111" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="2113" Tablename="DESPESAS" PrevTableName="FORNECEDORES_has_CONDOMINIO" XPos="880" YPos="318" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="22" >
+<COLUMNS>
+<COLUMN ID="2116" ColName="FORNECEDORES_ID_FORNECEDORES" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2118" ColName="CONDOMINIO_ID_CONDOMINIO" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2122" ColName="VALOR" PrevColName="" Pos="2" idDatatype="7" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2123" ColName="DESCRICAO" PrevColName="" Pos="3" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_END>
+<RELATION_END ID="2114" />
+<RELATION_END ID="2115" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="2120" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2116" LengthParam="0" />
+<INDEXCOLUMN idColumn="2118" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="2117" IndexName="FORNECEDORES_has_CONDOMINIO_FKIndex1" IndexKind="1" FKRefDef_Obj_id="2114">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2116" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="2119" IndexName="FORNECEDORES_has_CONDOMINIO_FKIndex2" IndexKind="1" FKRefDef_Obj_id="2115">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2118" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="2124" Tablename="CREDITOS" PrevTableName="IMOVEL_has_CONDOMINIO" XPos="273" YPos="277" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="25" >
+<COLUMNS>
+<COLUMN ID="2127" ColName="IMOVEL_ID_IMOVEL" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2129" ColName="CONDOMINIO_ID_CONDOMINIO" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2133" ColName="VALOR" PrevColName="" Pos="2" idDatatype="7" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2134" ColName="DESCRICAO" PrevColName="" Pos="3" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_END>
+<RELATION_END ID="2125" />
+<RELATION_END ID="2126" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="2131" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2127" LengthParam="0" />
+<INDEXCOLUMN idColumn="2129" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="2128" IndexName="IMOVEL_has_CONDOMINIO_FKIndex1" IndexKind="1" FKRefDef_Obj_id="2125">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2127" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="2130" IndexName="IMOVEL_has_CONDOMINIO_FKIndex2" IndexKind="1" FKRefDef_Obj_id="2126">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2129" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="2153" Tablename="MELHORIA" PrevTableName="Table_15" XPos="267" YPos="76" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="28" >
+<COLUMNS>
+<COLUMN ID="2155" ColName="ID_MELHORIA" PrevColName="" Pos="0" idDatatype="16" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2157" ColName="DESCRICAO" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="2159" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="2156" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2155" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="2158" Tablename="ORCAMENTOS" PrevTableName="MELHORIA_has_FORNECEDORES" XPos="559" YPos="45" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="29" >
+<COLUMNS>
+<COLUMN ID="2161" ColName="MELHORIA_ID_MELHORIA" PrevColName="" Pos="1" idDatatype="16" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2163" ColName="FORNECEDORES_ID_FORNECEDORES" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2167" ColName="VALOR" PrevColName="" Pos="2" idDatatype="7" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2168" ColName="ESCOLHIDA" PrevColName="" Pos="3" idDatatype="22" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_END>
+<RELATION_END ID="2159" />
+<RELATION_END ID="2160" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="2165" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2161" LengthParam="0" />
+<INDEXCOLUMN idColumn="2163" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="2162" IndexName="MELHORIA_has_FORNECEDORES_FKIndex1" IndexKind="1" FKRefDef_Obj_id="2159">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2161" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="2164" IndexName="MELHORIA_has_FORNECEDORES_FKIndex2" IndexKind="1" FKRefDef_Obj_id="2160">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2163" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="2169" Tablename="REGRAS_GERAIS" PrevTableName="Table_17" XPos="1336" YPos="636" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="32" >
+<COLUMNS>
+<COLUMN ID="2171" ColName="ID_REGRA" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="2173" ColName="DESCRICAO" PrevColName="" Pos="1" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="2175" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="2172" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="2171" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
 </TABLES>
 <RELATIONS>
 <RELATION ID="1941" RelationName="Rel_02" Kind="5" SrcTable="1931" DestTable="1922" FKFields="ID_ENDERECO=ENDERECO_ID_ENDERECO\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="-1" CaptionOffsetY="3" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1943" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="6" />
@@ -685,9 +961,17 @@
 <RELATION ID="2007" RelationName="Rel_11" Kind="2" SrcTable="1922" DestTable="1998" FKFields="ID_CONDOMINIO=CONDOMINIO_ID_CONDOMINIO\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2009" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" />
 <RELATION ID="2024" RelationName="Rel_14" Kind="1" SrcTable="1906" DestTable="2023" FKFields="ID_PROPRIETARIO=PROPRIETARIO_ID_PROPRIETARIO\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2027" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" />
 <RELATION ID="2025" RelationName="Rel_15" Kind="1" SrcTable="1944" DestTable="2023" FKFields="ID_AREA_COMUM=AREA_COMUM_ID_AREA_COMUM\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="-26" CaptionOffsetY="-6" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2029" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="17" />
-<RELATION ID="2036" RelationName="Rel_16" Kind="1" SrcTable="1953" DestTable="2035" FKFields="ID_VISITANTE=VISITANTE_ID_VISITANTE\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="-33" CaptionOffsetY="-7" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2039" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" />
+<RELATION ID="2036" RelationName="Rel_16" Kind="1" SrcTable="1953" DestTable="2035" FKFields="ID_VISITANTE=VISITANTE_ID_VISITANTE\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="-33" CaptionOffsetY="-7" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2039" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" />
 <RELATION ID="2037" RelationName="Rel_17" Kind="1" SrcTable="1906" DestTable="2035" FKFields="ID_PROPRIETARIO=PROPRIETARIO_ID_PROPRIETARIO\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="-41" CaptionOffsetY="-17" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2041" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="17" />
 <RELATION ID="2080" RelationName="Rel_10" Kind="5" SrcTable="1944" DestTable="2073" FKFields="ID_AREA_COMUM=AREA_COMUM_ID_AREA_COMUM\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2082" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="21" />
+<RELATION ID="2110" RelationName="Rel_10" Kind="5" SrcTable="1931" DestTable="2092" FKFields="ID_ENDERECO=ENDERECO_ID_ENDERECO\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2112" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="21" />
+<RELATION ID="2114" RelationName="Rel_11" Kind="1" SrcTable="2092" DestTable="2113" FKFields="ID_FORNECEDORES=FORNECEDORES_ID_FORNECEDORES\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2117" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="23" />
+<RELATION ID="2115" RelationName="Rel_12" Kind="1" SrcTable="1922" DestTable="2113" FKFields="ID_CONDOMINIO=CONDOMINIO_ID_CONDOMINIO\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2119" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="24" />
+<RELATION ID="2125" RelationName="Rel_13" Kind="1" SrcTable="1998" DestTable="2124" FKFields="ID_IMOVEL=IMOVEL_ID_IMOVEL\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2128" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="26" />
+<RELATION ID="2126" RelationName="Rel_14" Kind="1" SrcTable="1922" DestTable="2124" FKFields="ID_CONDOMINIO=CONDOMINIO_ID_CONDOMINIO\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2130" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="27" />
+<RELATION ID="2159" RelationName="Rel_16" Kind="1" SrcTable="2153" DestTable="2158" FKFields="ID_MELHORIA=MELHORIA_ID_MELHORIA\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2162" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="30" />
+<RELATION ID="2160" RelationName="Rel_17" Kind="1" SrcTable="2092" DestTable="2158" FKFields="ID_FORNECEDORES=FORNECEDORES_ID_FORNECEDORES\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2164" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="31" />
+<RELATION ID="2175" RelationName="Rel_18" Kind="2" SrcTable="2169" DestTable="1922" FKFields="ID_REGRA=REGRAS_GERAIS_ID_REGRA\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="2177" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="33" />
 </RELATIONS>
 <NOTES>
 </NOTES>
