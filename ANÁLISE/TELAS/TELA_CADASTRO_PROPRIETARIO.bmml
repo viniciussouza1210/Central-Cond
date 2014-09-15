@@ -1,0 +1,49 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1229" measuredH="617" mockupW="800" mockupH="600">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="429" y="17" w="800" h="600" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//www.central.cond.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="444" y="114" w="770" h="462" measuredW="200" measuredH="362" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>7</selectedIndex>
+        <text>Relat%F3rio%20Financeiro%0AReserva%20Area%20Comum%0AConsulta%20Reservas%0ARealiza%20Sugest%E3o%0ACadastra%20Fornecedores%0ACadastra%20Or%E7amentos%0AAgenda%20%C1rea%20Comum%0ACadastra%20Propriet%E1rio%0AEdita/Consulta%20Propriet%E1rio%0AReuni%F5es</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="1016" y="93" w="-1" h="-1" measuredW="134" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Fulano%20de%20Tal%20%28Sindico%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="1167" y="94" w="-1" h="-1" measuredW="25" measuredH="19" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sair</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="624" y="129" w="-1" h="-1" measuredW="37" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nome%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="629" y="165" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CPF%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="609" y="201" w="-1" h="-1" measuredW="53" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Telefone%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::TextInput" x="670" y="126" w="278" h="-1" measuredW="79" measuredH="26" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::TextInput" x="670" y="162" w="139" h="-1" measuredW="79" measuredH="26" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::TextInput" x="670" y="198" w="94" h="-1" measuredW="79" measuredH="26" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="836" y="165" w="-1" h="-1" measuredW="22" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>RG%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::TextInput" x="877" y="162" w="139" h="-1" measuredW="79" measuredH="26" zOrder="11" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
