@@ -21,9 +21,9 @@
         <text>Sair</text>
       </controlProperties>
     </control>
-    <control controlID="23" controlTypeID="com.balsamiq.mockups::DataGrid" x="604" y="141" w="249" h="85" measuredW="213" measuredH="81" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::DataGrid" x="604" y="141" w="373" h="85" measuredW="253" measuredH="81" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Titulo%2C%20Tipo%2C%20Aceita%0ACrian%E7as%20no%20p%E1tio%2C%20Regra%2C%20%5B%5D%0AObra%20Parquinho%2C%20Obra%2C%20%5Bx%5D</text>
+        <text>Titulo%2C%20Tipo%2C%20Aceita%2C%20A%E7%E3o%0ACrian%E7as%20no%20p%E1tio%2C%20Regra%2C%20%5B%5D%0AObra%20Parquinho%2C%20Obra%2C%20%5Bx%5D</text>
       </controlProperties>
     </control>
     <control controlID="32" controlTypeID="com.balsamiq.mockups::Button" x="833" y="497" w="61" h="27" measuredW="60" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
@@ -31,7 +31,7 @@
         <text>Salvar</text>
       </controlProperties>
     </control>
-    <control controlID="33" controlTypeID="com.balsamiq.mockups::FieldSet" x="592" y="118" w="276" h="123" measuredW="200" measuredH="170" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::FieldSet" x="592" y="118" w="443" h="123" measuredW="200" measuredH="170" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Minhas%20Sugest%F5es</text>
       </controlProperties>
@@ -56,6 +56,26 @@
     <control controlID="39" controlTypeID="com.balsamiq.mockups::ComboBox" x="660" y="285" w="-1" h="-1" measuredW="65" measuredH="46" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Regra%0AObra</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Icon" x="923" y="160" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>PencilIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Icon" x="947" y="160" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>Trash2Icon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Icon" x="923" y="192" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>PencilIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Icon" x="947" y="192" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>Trash2Icon%7Csmall</icon>
       </controlProperties>
     </control>
   </controls>

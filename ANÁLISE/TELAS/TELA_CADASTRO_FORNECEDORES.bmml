@@ -82,9 +82,9 @@
         <text>Curitiba%0AColombo%0ACianorte%0AS%E3o%20Jos%E9%20dos%20Pinhais%0AArauc%E1ria</text>
       </controlProperties>
     </control>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::Label" x="613" y="362" w="-1" h="-1" measuredW="45" measuredH="21" zOrder="22" locked="false" isInGroup="-1">
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Label" x="609" y="362" w="-1" h="-1" measuredW="60" measuredH="21" zOrder="22" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Estado%3A</text>
+        <text>Descri%E7%E3o%3A</text>
       </controlProperties>
     </control>
     <control controlID="61" controlTypeID="com.balsamiq.mockups::TextArea" x="670" y="362" w="486" h="120" measuredW="200" measuredH="140" zOrder="19" locked="false" isInGroup="-1"/>
