@@ -45,5 +45,22 @@
       </controlProperties>
     </control>
     <control controlID="11" controlTypeID="com.balsamiq.mockups::TextInput" x="877" y="162" w="139" h="-1" measuredW="79" measuredH="26" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Button" x="902" y="507" w="-1" h="-1" measuredW="60" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Salvar</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="823" y="201" w="-1" h="-1" measuredW="35" measuredH="21" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Email%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::TextInput" x="877" y="198" w="253" h="-1" measuredW="79" measuredH="26" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="624" y="240" w="-1" h="-1" measuredW="31" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Apto%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::TextInput" x="670" y="237" w="94" h="-1" measuredW="79" measuredH="26" zOrder="16" locked="false" isInGroup="-1"/>
   </controls>
 </mockup>
