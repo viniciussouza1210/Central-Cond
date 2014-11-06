@@ -1,0 +1,46 @@
+body {
+        font-family: Verdana;
+        }
+        #titulo {
+        border: 1px black solid;
+        background-color: black;
+        color: White;
+        height: 100px;
+        line-height: 100px;
+        font-size: x-large;
+        text-align: center;
+        margin: 10px;
+        }
+        #migalhas {
+        border: 1px black solid;
+        background-color: #eee;
+        margin: 10px;
+        }
+        #menuLateral {
+        float:left;
+        width: 250px;
+        border: 1px black solid;
+        background-color: #ccc;
+        margin: 10px;
+        }
+        #lateralB {
+        float: right;
+        width: 150px;
+        border: 1px black solid;
+        background-color: #ccc;
+        margin: 10px;
+        }
+        #centro {
+        margin-top: 20px;
+        margin-left: 270px;
+        margin-right: 170px;
+        border: 1px black solid;
+        background-color: #eee;
+    width: 473px;
+}
+        #rodape {
+        clear: both;
+        border: 1px;
+        font-size: x-small;
+        margin: 10px;
+        }

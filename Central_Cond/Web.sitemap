@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="PrincipalMorador.aspx" 
+                 title="Morador"  
+                 description="Página Principal Morador">
+        <siteMapNode url="RealizaReserva.aspx" 
+                     title="Realiza Reserva"  
+                     description="Realiza Reserva" />
+        <siteMapNode url="ConsultaReservas.aspx"
+                     title="Minhas Reservas"
+                     description="Consulta Reservas" />
+        <siteMapNode url="RelatorioFinanceiro.aspx" 
+                     title="Relatório Financeiro"  
+                     description="Relatório Financeiro" />
+        <siteMapNode url="RealizaSugestao.aspx" 
+                     title="Realiza Sugestão" 
+                     description="Realiza Sugestão" />
+    </siteMapNode>
+</siteMap>
